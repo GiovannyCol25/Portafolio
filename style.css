@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 100;
+    background-color: cornflowerblue;
+    padding: 10px;
+    align-items: center;
+}
+
+.header__link {
+    background-color:#89b8ee;
+    text-decoration: none;
+    margin-top: 50px;
+    color: rgb(112, 75, 212);
+    border: #555 solid 3px;
+    margin-right: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.header__link:hover {
+    background-color: #555;
+    color: white;
+}
+
+.header__link:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.header__Logo {
+    display: flex;
+    color: yellowgreen;
+    width: 70px;
+    justify-content: left;
+    align-items: center;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 450;
+}
+
+.header__Logo img {
+    height: 100px;
+    margin-right: 10px;
+}
+
+@media (max-width:700px) {
+    header{
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+}
+body {
+    background-image: linear-gradient(to bottom right, rgb(112, 75, 212), rgb(73, 176, 224));
+    color: white;    
+}
+
+main {
+   display: flex;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    background-color: #89b8ee;
+    position: fixed;
+    height: 20%;
+    overflow: auto;
+}
+  
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 5%;
+    text-decoration: none;
+    border: 1px solid greenyellow;
+    text-align: center;
+}
+
+li a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.titulo-blog{
+    color: yellowgreen;
+}
+
+.resalta-parrafo{
+    color: rgb(16, 219, 219);
+}
+
+.urgente{
+    color: red;
+}
+
+p {
+    margin: 30px;
+    border: solid blue 10px;
+    padding: 5px;
+
+}
+
